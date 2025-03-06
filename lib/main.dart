@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'header.dart';
 import 'inscription.dart';
 import 'mdpoub.dart'; // Mot de passe oublié
-import 'home.dart'; // Page d'accueil
+import 'clientP.dart'; // Page d'accueil
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -48,8 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
     String email = _emailController.text.trim();
     String password = _passwordController.text;
-    const String API_BASE_URL = "https://fd0c-41-220-147-108.ngrok-free.app";
-
+    const String API_BASE_URL = "https://7944-105-98-93-35.ngrok-free.app";
     final url = Uri.parse('$API_BASE_URL/api/login/');
 
     try {
