@@ -36,8 +36,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                 _buildTextField('Email'),
                 _buildTextField('Adresse postale complète'),
                 _buildDropdownField(
-                    'Type de compte', ['Courant', 'Épargne', 'Jeune'],
-                    (value) {
+                    'Type de compte', ['Courant', 'Épargne', 'Jeune'], (value) {
                   setState(() {
                     accountType = value;
                   });
@@ -70,8 +69,8 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                     ),
                     child: Text(
                       'Informations personnelles',
-                      style: TextStyle(
-                          fontSize: 16, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),

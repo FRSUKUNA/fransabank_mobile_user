@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'header.dart';
 import 'inscription.dart';
 import 'mdpoub.dart'; // Mot de passe oublié
-import 'clientP.dart'; // Page d'accueil
+import 'home.dart'; // Page d'accueil
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';

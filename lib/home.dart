@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'creecompte.dart'; // Importation de la page de création de compte
 import 'main.dart'; // Importation de la page de connexion
+import 'cocomptebanc.dart'; // Importation de la page de compte existant
 
 class ProfileScreen extends StatelessWidget {
   final String nomClient;
@@ -43,7 +44,12 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-            _buildButton(context, "J'ai déjà un compte bancaire", () {}),
+            _buildButton(context, "J'ai déjà un compte bancaire", () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
+              );
+            }),
             const SizedBox(height: 20),
             _buildButton(context, "Créer un compte bancaire", () {
               Navigator.push(
